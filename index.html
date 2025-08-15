@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #EEEEEE;
+    }
+    .navbar {
+      background-color: #201E43;
+    }
+    .navbar-brand, .nav-link {
+      color: #EEEEEE;
+    }
+    .navbar-brand:hover, .nav-link:hover {
+      color: #508C9B;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?blog,writing') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      color: white;
+      text-align: center;
+      background-image: url(images/bg.jpg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(32, 30, 67, 0.6);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .blog-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none;
+    }
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    footer {
+      background: linear-gradient(135deg, #134B70, #201E43);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><i class="bi bi-journal-text me-2"></i>Blog</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Categories</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="display-4 fw-bold">Welcome to MyBlog</h1>
+      <p class="lead">Stories, ideas and experiences that inspire</p>
+    </div>
+  </section>
+
+  <div class="container py-5">
+    <h2 class="text-center mb-4 fw-bold" style="color:#134B70;">Latest Posts</h2>
+    <div class="row g-4">
+      
+      <div class="col-md-4">
+        <div class="card blog-card h-100 shadow-sm">
+          <div id="carouselTravel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/t1.jpeg" class="d-block w-100" alt="Travel1" sizes="width=1000" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="images/t2.jpeg" class="d-block w-100" alt="Travel2" sizes="width=1000" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="images/t3.jpeg" class="d-block w-100" alt="Travel3" sizes="width=1000" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="images/t4.jpeg" class="d-block w-100" alt="Travel4" sizes="width=1000" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="images/t5.jpeg" class="d-block w-100" alt="Travel5" sizes="width=1000" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="images/t6.jpeg" class="d-block w-100" alt="Travel6" sizes="width=1000" height="500">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTravel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTravel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" style="color:#134B70;">Adventures Around the Globe</h5>
+            <p class="card-text">Discover hidden gems, local traditions, and thrilling adventures that will inspire your next journey.</p>
+            <a href="#" class="btn" style="background-color:#508C9B;color:#EEEEEE;">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card blog-card h-100 shadow-sm">
+          <div id="carouselFood" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/f1.jpg" class="d-block w-100" alt="Food1" sizes="width=1000" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="images/f2.jpeg" class="d-block w-100" alt="Food2" sizes="width=1000" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="images/f3.jpeg" class="d-block w-100" alt="Food3" sizes="width=1000" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="images/f4.jpeg" class="d-block w-100" alt="Food4" sizes="width=1000" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="images/f5.jpeg" class="d-block w-100" alt="Food5" sizes="width=1000" height="500">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFood" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselFood" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" style="color:#134B70;">Delicious Culinary Experiences</h5>
+            <p class="card-text">Dive into the world of innovation, where creativity meets technology.</p>
+            <a href="#" class="btn" style="background-color:#508C9B;color:#EEEEEE;">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card blog-card h-100 shadow-sm">
+          <div id="carouselTech" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/c1.jpeg" class="d-block w-100" alt="Tech1" sizes="width=1000" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="images/c2.jpeg" class="d-block w-100" alt="Tech2" sizes="width=1000" height="500">
+              </div>
+              <div class="carousel-item">
+                <img src="images/c3.jpeg" class="d-block w-100" alt="Tech3" sizes="width=1000" height="500">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTech" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTech" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title" style="color:#134B70;">Tech Trends</h5>
+            <p class="card-text">A deep dive into the latest technology shaping our future.</p>
+            <a href="#" class="btn" style="background-color:#508C9B;color:#EEEEEE;">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="text-white py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-2">Follow Us</p>
+      <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+      <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-4"></i></a>
+      <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+      <p class="mt-3 mb-0">&copy; 2025 MyBlog. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
